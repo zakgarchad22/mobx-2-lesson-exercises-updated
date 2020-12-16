@@ -1,9 +1,10 @@
-import { observable, action, makeAutoObservable } from  'mobx'
+/* eslint-disable */
+import { observable, action, makeAutoObservable } from 'mobx'
 
 export class GeneralStore {
     constructor() {
-        this.name
-        this.numPeople
+        this.name = '';
+        this.numPeople = 0;
 
         makeAutoObservable(this, {
             name: observable,
